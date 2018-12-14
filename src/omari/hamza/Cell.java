@@ -2,15 +2,17 @@ package omari.hamza;
 
 public class Cell {
 
-	int x;
-	int y;
+	private int x;
+	private int y;
+	private int heuristic;
 
-	public Cell(int x, int y) {
+	Cell(int x, int y, int heuristic) {
 		this.x = x;
 		this.y = y;
+		this.heuristic = heuristic;
 	}
 
-	public int getX() {
+	int getX() {
 		return x;
 	}
 
@@ -18,11 +20,19 @@ public class Cell {
 		this.x = x;
 	}
 
-	public int getY() {
+	int getY() {
 		return y;
 	}
 
 	public void setY(int y) {
 		this.y = y;
+	}
+
+	public int getHeuristic() {
+		return heuristic;
+	}
+
+	public void setHeuristic(int heuristic) {
+		this.heuristic = heuristic;
 	}
 }

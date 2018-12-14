@@ -4,19 +4,15 @@ public class Main {
 
     public static void main(String[] args) {
 
-        /*char board[][] =
-                {
-                        {'x', 'o', 'x'},
-                        {'o', 'o', 'x'},
-                        {'_', '_', '_'}
-                };*/
+
 
         char board[][] =
                 {
-                        {'o', '_', 'x'},
-                        {'_', '_', '_'},
-                        {'_', '_', 'x'}
+                        {'x', 'o', 'x'},
+                        {'o', '_', '_'},
+                        {'_', '_', '_'}
                 };
+
         TicTacToe ticTacToe = new TicTacToe();
         Cell bestCell = ticTacToe.bestMove(board);
 
