@@ -9,8 +9,8 @@ public class Main {
         char board[][] =
                 {
                         {'x', 'o', 'x'},
-                        {'o', '_', '_'},
-                        {'_', '_', '_'}
+                        {'o', 'o', '_'},
+                        {'_', '_', 'x'}
                 };
 
         TicTacToe ticTacToe = new TicTacToe();
